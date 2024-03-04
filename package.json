@@ -1,0 +1,20 @@
+{
+  "name": "ckb_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ckb-lumos/config-manager": "^0.21.1",
+    "@ckb-lumos/hd": "^0.21.1",
+    "@ckb-lumos/lumos": "^0.21.1",
+    "@nervosnetwork/ckb-sdk-utils": "^0.109.0",
+    "bignumber.js": "^9.1.2"
+  }
+}
