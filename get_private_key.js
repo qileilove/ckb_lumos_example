@@ -15,22 +15,8 @@ export const generateFirstHDPrivateKey = () => {
     return extendedPrivKey.privateKeyInfo(AddressType.Receiving, 0).privateKey;
   }
 
-
-  const getAddressByPrivateKey = (privateKey) => {
-    const args = hd.key.privateKeyToBlake160(privateKey);
-    const template = config.predefined.AGGRON4.SCRIPTS["SECP256K1_BLAKE160"];
-    const lockScript = {
-      codeHash: template.CODE_HASH,
-      hashType: template.HASH_TYPE,
-      args: args,
-    };
-  
-    return helpers.encodeToAddress(lockScript);
-  };
   const privateKey = generateFirstHDPrivateKey()
-  const address = getAddressByPrivateKey(privateKey);
   console.log('privateKey: ', privateKey)
-  console.log('address: ', address)  
 
 
 
